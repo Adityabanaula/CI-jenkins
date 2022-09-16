@@ -3,7 +3,7 @@ CI-jenkins is a project repo for creating CI pipeline in Jenkins using SonarQube
 
 ## Procedure ##
 
-### Step 1 ###
+### Installing Jenkins ###
 Select a Cloud provider for setting up of server or you can use VirtualBox or VMWare. I am using Google Cloud Platform.
 * Create VM instance for Jenkins Server
    * Open GCP and activate cloud shell.
@@ -57,9 +57,9 @@ Select a Cloud provider for setting up of server or you can use VirtualBox or VM
 * Create VM instance for installing Sonarqube server
     * Creating VM instance `sonarqube`
         ```
-           gcloud compute instances create jenkins \
+           gcloud compute instances create sonarqube \
              --zone=us-central1-a \
-             --tags=jenkins-server \
+             --tags=sonarqube-server \
              --machine-type=e2-medium \
              --image-family=debian-11 \
              --image-project=debian-cloud \
