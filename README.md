@@ -162,3 +162,16 @@ Select a Cloud provider for setting up of server or you can use VirtualBox or VM
                sleep 30
                reboot'
         ```
+
+### Installing Nessus Repository ###
+* Create VM instance for installing Nessus Repository
+    * Creating VM instance `nessus`
+    ```
+       gcloud compute instances create nessus \
+          --zone=us-central1-a \
+          --tags=nessus-server \
+          --machine-type=e2-medium \
+          --image-family=debian-11 \
+          --image-project=debian-cloud \
+          --metadata=startup-script='  '
+     ```
