@@ -31,3 +31,5 @@ Create EC2 instance with Ubuntu18, machine type t2.medium and user-data from jen
 
 `sudo apt-get install jenkins -y`
 
+```javascript
+```
